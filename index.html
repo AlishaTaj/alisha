@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height to Weight Prediction</title>
+</head>
+<body>
+    <h1>Predict Weight from Height</h1>
+    <form method="POST">
+        <label for="height">Enter height:</label>
+        <input type="text" id="height" name="height" required>
+        <input type="submit" value="Predict">
+    </form>
+    {% if predicted_weight %}
+        <h2>Predicted Weight: {{ predicted_weight }} kg</h2>
+    {% endif %}
+</body>
+</html>
